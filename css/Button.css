@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+DEMO 4
+*/
+
+.a_demo_four {
+	background-color: #51c2ed;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: -webkit-gradient(
+ linear,
+ left bottom,
+ left top,
+ color-stop(0, rgb(60 181 225)),
+ color-stop(1, rgb(83 197 239))
+ );
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #35c4f9, 0px 5px 0px 0px #1f7fa3, 0px 10px 5px #9f9c9c;
+}
+
+.a_demo_four:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(62,184,229)),
+	color-stop(1, rgb(44,160,202))
+	);
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+
+.a_demo_four::before {
+	background-color: #27a3cb;
+	background-image:url(../img/right_arrow.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	border-radius: 50%;
+	box-shadow: inset 0px 1px 0px #09326a, 0px 1px 0px #6accf1;
+}
+
+.a_demo_four:active::before {
+	top:50%;
+	margin-top:-12px;
+	-webkit-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+	-moz-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+}
+
+#container_buttons{
+	width: 400px;
+	margin: 0 auto;
+	padding: 60px 60px 30px;
+	border-radius: 20px;	
+	position: relative;
+	text-align: center;
+	bottom:-636px;
+	letter-spacing: 2px;/*字体间距*/
+}
+
+.img-wrap{
+	display:flex;
+    align-items: center; /*垂直居中*/
+    justify-content: center;
+}
+
+img {
+	margin: 0 auto;
+    width:29px;
+	height:29px;
+	position:absolute;
+	bottom:-569px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+
+/*  Moon-Starry-Sky.html  按钮*/
+@-webkit-keyframes active {
+  from {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
+  }
+  to {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+}
+@keyframes active {
+  from {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
+  }
+  to {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.grid {
+  max-width: 400px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 150px 150px 50px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 40px 25px;
+}
+ 
+ .btn{
+	display:flex;
+    align-items: center; /*垂直居中*/
+    justify-content: center;
+}
+
+ 
+button,
+[role="button"] {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 121px;
+  height: 46px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+
+}
+button::-moz-focus-inner,
+[role="button"]::-moz-focus-inner {
+  border: 0;
+}
+button > *,
+[role="button"] > * {
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+button:hover:not([disabled]),
+[role="button"]:hover:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+button:hover:not([disabled]) > *,
+[role="button"]:hover:not([disabled]) > * {
+  -webkit-transform: scale(0.975);
+          transform: scale(0.975);
+}
+button:focus:not(:active),
+[role="button"]:focus:not(:active) {
+  -webkit-animation: active 0.9s alternate infinite;
+          animation: active 0.9s alternate infinite;
+  outline: none;
+}
+button:active:not([disabled]),
+[role="button"]:active:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+button:active:not([disabled]) > *,
+[role="button"]:active:not([disabled]) > * {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
