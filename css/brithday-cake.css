@@ -67,7 +67,7 @@ h1, h2, span {
   }
 
   .wishes{
-  	position: fixed;
+    position: fixed;
     text-align: center;
     width: 100%;
     bottom:-436px;
@@ -81,12 +81,12 @@ h1, h2, span {
     letter-spacing: 5px;/*字体间距*/
     line-height:30px; /*字体行间距*/ 
   }
-  
+	
   .palyer-audio{
-position:fixed;
-
+    position:fixed;
     top: 10px;
-	}
+  }
+	
   bokeh {
     position: fixed;
     width: 2vmin;
