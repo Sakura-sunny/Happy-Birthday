@@ -2,7 +2,7 @@
 .mobile {
   position: fixed;
   text-align: center;
- /* width: 100%;*/
+  width: 100%;
   top: 50px;
   font-size: 90px;
   display: block;
@@ -23,10 +23,12 @@ h1, h2, span {
 
   body {
     background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
-    cursor: crosshair;
+    cursor: pointer;   //光标
     perspective: 1000px;
     transform-style: preserve-3d;
     font-family: "Pacifico",cursive;
+    margin: 0px;
+    padding: 0px;
   }
 
   h1 {
@@ -68,7 +70,7 @@ h1, h2, span {
   	position: fixed;
     text-align: center;
     width: 100%;
-    bottom:-480px;
+    bottom:-436px;
     font-size: 21px;
     background: -webkit-linear-gradient(0deg, #fdfdfd 0%, #f9fafb 100%);
     -webkit-background-clip: text;
@@ -79,7 +81,12 @@ h1, h2, span {
     letter-spacing: 5px;/*字体间距*/
     line-height:30px; /*字体行间距*/ 
   }
+  
+  .palyer-audio{
+position:fixed;
 
+    top: 10px;
+	}
   bokeh {
     position: fixed;
     width: 2vmin;
@@ -704,7 +711,7 @@ h1, h2, span {
   }
   .cake {
     position: relative;
-    top: 250px;
+    top: 236px;
     margin: auto;
     width: 200px;
     height: 60px;
@@ -720,7 +727,7 @@ h1, h2, span {
     width: 300px;
     bottom: -95px;
     left: 50%;
-    top: 380px;
+    top: 426px;
     margin-left: -150px;
     border-radius: 100%;
     background: radial-gradient(ellipse closest-side at center, #08c7fe 0%, #04d7f2 71%, #02ffd0 100%);
@@ -732,7 +739,7 @@ h1, h2, span {
     position: relative;
     height: 50px;
     width: 12px;
-    top: 280px;
+    top: 266px;
     margin: auto;
     background: linear-gradient(0deg, #b7f4a7 0%, white 100%);
     border-radius: 4px;
