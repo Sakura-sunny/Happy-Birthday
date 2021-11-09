@@ -1,63 +1,68 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html >
 
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
-	<title>Happy Birthday!</title>
-	
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Happy Birthday!</title>	
 	 <link rel="stylesheet" href="css/brithday-cake.css">
     <link rel="stylesheet" type="text/css" href="css/Button.css" />
+   
 </head>
 
 <body>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
 	
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<bokeh></bokeh>
+	<div class="player-audio">
+		<audio autoplay controls loop>
+			<source src="m/2.mp3" type='audio/ogg'>
+		</audio>
+	</div>
 	<div class="mobile">最大化查看</div>
 	<div class="pyro">
 		<div class="before"></div>
@@ -67,10 +72,10 @@
 	<h1>Feliz Cumpleaños Pratik!</h1>
 	<h2>Happy Birthday Mr.W!</h2>
 	<span>🎉</span>
+
 	<div class="candle">
 		<div id="flame" class="lit"></div>
 	</div>
-	
 	<div class="cake"></div>
 	<div class="plate"></div>
 	
@@ -83,7 +88,7 @@
 		<a class="a_demo_four" href="Moon-Starry-Sky.html">下一景</a>
 	</div>
 	
-	<script >
+	<script language="JavaScript" type="text/javascript">
 	 var p = document.getElementById("wish");
         function countDown() {
             setInterval(function () {
@@ -96,9 +101,10 @@
                 var minute = parseInt(time%3600/60);   // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
                 var second = parseInt(time%60);   // 以60秒为一整份 取余 剩下秒数
                 wish.innerHTML = "小老头<br>你已经来到这个世界：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"了<br>今日是你的生日，愿所有的快乐、所有的幸福、所有的温馨、<br>所有的好运围绕在你身边。生日快乐！";
-            }, 1000)
+            }, 10)
         }
         countDown();
+
 	</script>
 	
 </body>
