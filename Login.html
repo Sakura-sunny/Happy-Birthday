@@ -5,6 +5,91 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
        <title></title>
        <link rel="stylesheet" href="css/login.css">
+		<script>
+		!function(){
+			var windowWidth = $(window).width();			
+			var widthList = $(".auto");			
+			$.each(widthList, function() {
+				///自适应宽度
+				var width = $(this).attr("width");				
+				if(!isNaN(width)){					
+					var currentWidth =  windowWidth / 1920 * width ;					
+					$(this).css("width",currentWidth+"px");					
+				}				
+				///自适应高度
+				var height = $(this).attr("height");				
+				if(!isNaN(height)){					
+					var currentHeight =  height ;
+					$(this).css("height",height+"px");					
+				}					
+				///自适应x
+				var x = $(this).attr("x");				
+				if(!isNaN(x)){					
+					var currentX =  windowWidth / 1920 * x ;
+					if($(this).css("position") == "absolute"){						
+						$(this).css("left",currentY+"px");						
+					}else{						
+						$(this).css("padding-left",currentX+"px");						
+					}										
+				}				
+				///自适应y
+				var y = $(this).attr("y");				
+				if(!isNaN(y)){					
+					var currentY =  y ;
+					if($(this).css("position") == "absolute"){						
+						$(this).css("top",currentY+"px");					
+					}else{						
+						$(this).css("padding-top",currentY+"px");						
+					}				
+				}
+			});
+			
+			var windowWidth = $(window).width();			
+			subFun($("body"));		
+			function subFun(obj){			
+				var list = $(obj);			
+				$.each($(list), function() {				
+					if ($(this).length>0){						
+						subFun($(this).children());						
+					}								
+				if($(this).css("position") == "absolute"){										
+					var left = $(this).css("left");					
+					left = left.substring(0,left.length-2);					
+					if(left!=0){						
+						$(this).css("left",(windowWidth / 1920 *left)+"px");						
+					}
+					
+					var right = $(this).css("right");
+					right = right.substring(0,right.length-2);
+					if(right!=0){						
+						$(this).css("right",(windowWidth / 1920 *right)+"px");						
+					}						
+				}
+				
+				var width = $(this).css("width");					
+					width = width.substring(0,width.length-2);					
+					if(width!=0){	
+						$(this).css("width",(windowWidth / 1920 *width)+"px");						
+						if($(this)[0].tagName == "IMG" && $(this).attr("isAuto") != "no"){				
+							$(this).css("background","cover");							
+							var height = $(this).css("height");					
+							height = height.substring(0,height.length-2);							
+							if(height!=0){
+								
+								$(this).css("height",(windowWidth / 1920 *height)+"px");								
+							}							
+						}
+					}	
+					
+					var fontSize = $(this).css("font-size");					
+					fontSize = fontSize.substring(0,fontSize.length-2);					
+					if(fontSize!=0){						
+						$(this).css("font-size",(windowWidth / 1920 *fontSize)+"px");						
+					}				
+			});				
+			}			
+	    	}();	
+</script>
     </head>
 <body>
     <section>
