@@ -4,7 +4,7 @@
   text-align: center;
   width: 100%;
   top: 50px;
-  font-size: 90px;
+  font-size: 1em;
   display: block;
 }
 
@@ -23,13 +23,16 @@ h1, h2, span {
 
   body {
     background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
-    cursor: pointer;   //光标
+    cursor: pointer;   /*光标*/
     perspective: 1000px;
     transform-style: preserve-3d;
     font-family: "Pacifico",cursive;
     margin: 0px;
     padding: 0px;
   }
+
+/* margin:0 auto;相当于margin:0 auto 0 auto;即上下是0，左右是自动。
+   margin:0px;就是上、下、左、右都是0px*/
 
   h1 {
     position: fixed;
@@ -67,25 +70,25 @@ h1, h2, span {
   }
 
   .wishes{
-    position: fixed;
+  	position: fixed;
     text-align: center;
     width: 100%;
-    bottom:-436px;
+    bottom:-496px;
     font-size: 21px;
     background: -webkit-linear-gradient(0deg, #fdfdfd 0%, #f9fafb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Concert One', cursive;
-    font-weight: 360;
+    font-weight: bold;
     z-index: -1;
     letter-spacing: 5px;/*字体间距*/
     line-height:30px; /*字体行间距*/ 
   }
-	
+  
   .palyer-audio{
-    position:fixed;
+  	position:fixed;
     top: 10px;
-  }
+	}
 	
   bokeh {
     position: fixed;
@@ -97,12 +100,14 @@ h1, h2, span {
     animation-direction: reverse;
     animation-timing-function: cubic-bezier(0.84, 0.02, 1, 1);
   }
+  
   bokeh:nth-child(1) {
     background-color: #2bd8ff;
     transform: translate(70.7404476506vw, 39.2982912115vh);
     animation-duration: 2.451477853s;
     animation-delay: -3.9090695973s;
   }
+  
   bokeh:nth-child(2) {
     background-color: #feff28;
     transform: translate(21.390916309vw, 83.9320950239vh);
@@ -127,42 +132,49 @@ h1, h2, span {
     animation-duration: 2.6247180243s;
     animation-delay: -0.3571633852s;
   }
+  
   bokeh:nth-child(6) {
     background-color: #feff28;
     transform: translate(67.5348277973vw, 93.8934516001vh);
     animation-duration: 3.0630744908s;
     animation-delay: -4.4890304964s;
   }
+  
   bokeh:nth-child(7) {
     background-color: #feff28;
     transform: translate(51.2278043561vw, 39.0030857051vh);
     animation-duration: 3.1065374294s;
     animation-delay: -4.5619134997s;
   }
+  
   bokeh:nth-child(8) {
     background-color: #fc85e1;
     transform: translate(63.2547804674vw, 88.7449965817vh);
     animation-duration: 2.8384921355s;
     animation-delay: -0.0965491775s;
   }
+  
   bokeh:nth-child(9) {
     background-color: #fc85e1;
     transform: translate(1.7747115187vw, 78.6520215079vh);
     animation-duration: 4.3100039072s;
     animation-delay: -0.553894004s;
   }
+  
   bokeh:nth-child(10) {
     background-color: #ef8d22;
     transform: translate(61.1915375825vw, 46.9592056036vh);
     animation-duration: 2.6244512022s;
     animation-delay: -4.5897035553s;
   }
+  
   bokeh:nth-child(11) {
     background-color: #ef8d22;
     transform: translate(4.3118502657vw, 31.3689335931vh);
     animation-duration: 2.9020870937s;
     animation-delay: -0.0475365525s;
   }
+  
   bokeh:nth-child(12) {
     background-color: #fc85e1;
     transform: translate(11.7124176675vw, 39.3853134156vh);
@@ -711,7 +723,7 @@ h1, h2, span {
   }
   .cake {
     position: relative;
-    top: 236px;
+    top: 266px;
     margin: auto;
     width: 200px;
     height: 60px;
@@ -727,7 +739,7 @@ h1, h2, span {
     width: 300px;
     bottom: -95px;
     left: 50%;
-    top: 426px;
+    top: 400px;
     margin-left: -150px;
     border-radius: 100%;
     background: radial-gradient(ellipse closest-side at center, #08c7fe 0%, #04d7f2 71%, #02ffd0 100%);
@@ -739,7 +751,7 @@ h1, h2, span {
     position: relative;
     height: 50px;
     width: 12px;
-    top: 266px;
+    top: 292px;
     margin: auto;
     background: linear-gradient(0deg, #b7f4a7 0%, white 100%);
     border-radius: 4px;
